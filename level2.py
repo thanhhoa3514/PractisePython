@@ -169,7 +169,115 @@
     #         netAmount += amount
     #     elif operation == "W":
     #         netAmount -= amount
-    # print (netAmount)          
+    # print (netAmount)   
+    
+    
+###########################################################
+# Check string is palindrome if not palindrome convert it to palindrome
+# s=input("Please enter:  ")
+    # def check_Palindrome(s):
+    #     for string in s:
+    #         if string != string[::-1]:
+    #             return False
+    #     return True
+
+    # def arrange_String(s):
+    #     if check_Palindrome(s):
+    #         return s
+    #     else:
+    #         for i in range(len(s)//2):    
+    #             if(s[i]==s[-i-1]):
+    #                 for j in range(i+1,len(s)):
+    #                     if(s[j]==s[-i-1]):
+    #                         s[i], s[j] = s[j], s[i]
+    #                         break
+    #         return s 
+
+    # Example usage
+    # s = list(map(int, input("Enter the list of strings: ").split(" ")))
+
+    # if check_Palindrome(s):
+    #     print("List of string is palindrome")
+    # else:
+    #     new_list = arrange_String(s)
+    #     if check_Palindrome(new_list):
+    #         print("List of string after converting to palindrome: ", new_list)
+    #     else:
+    #         print("None of string after converting to palindrome")
+    
+    
+################################################################
+
+#Enter the array of tulips and arranging for the order string, age and score
+    # from operator import itemgetter, attrgetter
+    # l = []
+
+    # while True:
+    #     s = input()
+    #     if not s:
+    #     break
+    #     l.append(tuple(s.split(",")))
+
+    # print (sorted(l, key=itemgetter(0,1,2)))
+    
+    
+    
+    # def putNumbers(n):
+    #     i = 0
+    #     while i<n:
+    #         j=i
+    #         i=i+1
+    #         if j%7==0:
+    #             yield j
+    # # Bài tập Python 23 Code by 
+    # for i in putNumbers (100):
+    #      print (i)    
+        
+        
+################################
+# Robot going for up down left right, calculating their distance at the first position (0,0) to
+# the end of the position
+
+    # import math
+    # pos=[0,0]  
+    # while True:
+    #     s=input("Enter your move (U,D,L,R, or Q to quit): ")
+    #     if s.upper()=='Q':
+    #         break
+        
+    #     movement=s.split(' ')
+    #     direction=movement[0]
+    #     steps=int(movement[1])
+    #     if direction=='U':
+    #         pos[0]+=steps
+    #     elif direction=='D':
+    #         pos[0]-=steps
+    #     elif direction=='L':
+    #         pos[1]-=steps
+    #     elif direction=='R':
+    #         pos[1]+=steps
+    #     else:
+    #         print("Invalid move. Please try again.")      
+            
+            
+    # print(int(round(math.sqrt((pos[1]**2)+(pos[0]**2)))))      
+    
+    
+    
+################################################################
+myDict = {}
+l=[x for x in input("Enter the chain sequence separated by space").split(" ")];
+for word in l:
+    myDict[word] =myDict.get(word,0)+1
+    
+words=sorted(myDict.keys())
+for word in words:
+    print ("%s:%d" % (word,myDict[word]))    
+      
+    
+                              
+                        
+                 
                 
                 
                 
